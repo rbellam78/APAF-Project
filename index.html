@@ -12,6 +12,17 @@
             margin: 0;
             padding: 50px;
             position: relative;
+                #photoDisplay {
+        max-width: 80%;  /* Limits width to 80% of the screen */
+        max-height: 500px;  /* Limits height to prevent zooming */
+        width: auto;  /* Maintains aspect ratio */
+        height: auto;
+        display: block;
+        margin: 20px auto;  /* Centers the image */
+        border-radius: 15px; /* Optional: Makes edges rounded for a softer look */
+        object-fit: contain; /* Ensures full image is visible without cropping */
+    }
+
         }
         h1, h3, p, button {
             font-size: 2.5rem;
